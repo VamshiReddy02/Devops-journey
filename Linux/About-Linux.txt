@@ -23,7 +23,7 @@ Example:diff name1.txt name2.txt
 Let's talk about file permission, There are 3 types of permission i.e read, write and execute. to check the file permission you can type 'ls-l' And if want to change the file permission then you can use 'chmod u=rwe,g=re,o=rw <file name>' or use binary number to change permission, like 'chmod 777 <file name>' note 4=read,2=write and 1=excute.
 'chown' is used to change the owner or user. for example 'sudo chown root <file name>'
 For Performing an action on Multiple File use 'find . -type f -name "*.txt" -exec re -f {} +'
-The above command is for deleting all file with excetion .txt
+The above command is for deleting all file with extension .txt
 'grep' is a command-line utility for searching plain-text data sets for lines that match a regular expression.
 Example: 
 grep -w "<random word>" <file name>
