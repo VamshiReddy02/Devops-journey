@@ -1,0 +1,20 @@
+so first command from my list is 'mkdir' is used to create directories or in simple language we can say FOLDER.mkdir stands for "make directory".If want to create directory inside the directory than use 'mkdir test/tast1' 
+or if you want to creat inbetween then use 'mkdir -p test/middle/test1' 
+
+2nd command from my list is 'ls' command which is used to list all the file in folder/directories and if we use 'ls -a' command than we can see all the hidden files in the directory.And if we use 'ls -R' we can see all the sub directories files also.
+
+Next command is 'pwd' which usually prints the curent working directory path, start from the root.
+like: /mnt/d/Vamshi
+
+'cd' command used for change the directory or change the floder.if we use 'cd .'it mean current directory and 'cd ..' means change to previous directory.
+'cat' command prints the content of the file in the terminal.we can create a file by using 'cat > name.txt' command.And 'touch' command also do the same thing.example touch name.txt
+'cp' command used to cope content of file into new file.Example cp <existing file name> <new file name> 
+'mv' command genrally used for move files to diffrent folder and also you can rename the files also.
+'rm' is used for remove file from the system permantly.And if you want to delete a directory than you can use 'rm -R<name of folder>'.
+Next command is 'sudo' which allows you to run program with the security or in simple word only admin can use this command.
+'df' commend tell us about the disk storage like how much free space is available.And you want to see more clearly than you can use 'df -h' command.
+And 'du' command tell us how much a file is taking the storage.
+'head' command is used for show first few line from the file and 'tail' command is used for show last few line from the file in the terminal.
+'diff' command is used to tell about the common line between two file.
+Example:diff name1.txt name2.txt
+'locate' command tell us how many file with .txt or some other extension are present in current directory and it display it.
