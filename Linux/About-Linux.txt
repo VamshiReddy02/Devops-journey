@@ -20,17 +20,17 @@ And 'du' command tell us how much a file is taking the storage.
 'diff' command is used to tell about the common line between two file.
 Example:diff name1.txt name2.txt
 'locate' command tell us how many file with .txt or some other extension are present in current directory and it display it.
-Lets talk about file permission, There are 3 type of permission i.e read, write and excute.to check the file permission you can type 'ls-l' And if want to change the file permission then you can use 'chmod u=rwe,g=re,o=rw <file name>' or use binery number to change permission, like 'chmod 777 <file name>' note 4=read,2=write and 1=excute.
-'chown' is used for change the ouwner or user. for example 'sudo chown root <file name>'
+Let's talk about file permission, There are 3 types of permission i.e read, write and execute. to check the file permission you can type 'ls-l' And if want to change the file permission then you can use 'chmod u=rwe,g=re,o=rw <file name>' or use binary number to change permission, like 'chmod 777 <file name>' note 4=read,2=write and 1=excute.
+'chown' is used to change the owner or user. for example 'sudo chown root <file name>'
 For Performing an action on Multiple File use 'find . -type f -name "*.txt" -exec re -f {} +'
-Above command is for delete all file with excetion .txt
+The above command is for deleting all file with excetion .txt
 'grep' is a command-line utility for searching plain-text data sets for lines that match a regular expression.
 Example: 
 grep -w "<random word>" <file name>
 grep -i "<random word>" <file name>
 grep -n "<random word>" <file name>
 grep -B 3 "<random word>" <file name>
-'wget' is used for download file from internet.
-'top' is used for check which softwere running in background.
+'wget' is used for downloading files from the internet.
+'top' is used to check which software running in the background.
 'zip' command is used to convert one or more file to zip file. For Example 'zip file.zip <file name> <another file name>'
-And for unzip file you can use 'unzip file.zip'.
+And for unzip file, you can use 'unzip file.zip'.
