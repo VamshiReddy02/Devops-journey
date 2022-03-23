@@ -1,0 +1,114 @@
+What is YAML?
+YAML is also known as 'YAML ain't markup language'.
+It is basically a data format used to exchange data. 
+In YAML, we can store only data and not commands. 
+YAML is a human-readable language.
+
+Data Serialization and Deserialization:
+It is a process of converting the data object in the complex data structure, into a stream of storage.
+
+Some Benefits about YAML Files are:
+-simple and easy to use.
+-Most languages use YAML
+-Various tools are available.
+-parsing is easy.
+
+Creating a YAML File:
+we can create a YAML file by using the extension .yml or .yaml
+Demo:
+"car": "It is my car"
+---
+#List 
+-apple
+-mango
+-Apple  (YAML is Case-Sensitive [apple!=Apple])
+---
+#block
+cities:
+-new Delhi
+-Telangana
+---
+#flow
+cities: [new delhi,Mumbai]
+
+
+Datatypes:
+Generally, Datatypes are automatically detected.
+-int
+positive: !!int 45
+comma: !!int +540_000
+
+-float
+marks: !!float 56.92
+infinite: !!float .inf
+
+-boolean
+boolean: !!bool No,n,N,false,False,FALSE
+                 !!bool Yes,y,Y,true,True,TRUE
+-string
+message: !!str for string
+
+-Exponents
+expontial number : 6.023E34
+
+
+Some Advanced Data-type:
+1)Sequence
+student: !!seq
+-marks
+-name
+-roll no
+(or)
+cities: [new delhi,mumbai]
+
+#nested sequence
+-
+ -mango
+ -apple
+ -grapes
+-
+ -yellow
+ -red
+ -green
+ 
+ 2)Maps
+ !!map (key:value pairs are called maps)
+ 
+ 3)pairs
+ pair example : !!pairs
+  -job: student
+  -job: teacher
+  (or)
+ pair example : !!pairs[job: student, job: teacher]
+ 
+ 3)Set
+ names: !!set
+  ? Ronit
+  ? vamshi
+  ? josh
+  
+ 4) Dictionary
+ people : !!omap
+  -Vamshi:
+    name : Vamshi Reddy
+    age : 20
+    height : 165 cm
+  -Josh
+    name : Josh simon
+    age : 25
+    height : 184 cm
+    
+Re-Using some properties(Anchors)
+For Example:
+likings: &likes
+ fav food: mango
+ dislikes: grapes
+
+person1:
+ name: Vamshi
+ <<: *likes
+
+person2:
+ name: Josh
+ <<: *likes  (copies the likings)
+ 
