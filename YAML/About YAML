@@ -111,4 +111,5 @@ person1:
 person2:
  name: Josh
  <<: *likes  (copies the likings)
+ basicall what it does that it copies the liking in at *likes
  
