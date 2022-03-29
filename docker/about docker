@@ -1,0 +1,45 @@
+What a container?
+ A container is a way to package applications with everything they need inside of the package,
+ including the dependencies and all the configurations necessary. And that package is portable.
+ 
+ A package can be easily shared and moved around between a development team and operations team.
+ And that portability of containers plus everything packaged in one isolated environment gives it some of the advantages that make the development and deployment process more efficient.
+ 
+ What is a container technically?
+a container is made up of images. So we have layers of stacked images on top of each other. And at the base of most of the containers, 
+you would have a Linux based image, which is either Alpina with a specific version or...
+it could be some other Linux distribution. And it's important for those base images to be small. 
+So on top of the base image, you would have an application image. Usually, you would have these intermediate images that will lead up to the actual application image.
+
+How to run docker locally
+After Installing the docker, open cmd and type 'docker run <name of docker image>:<if want you to specify the version>'.
+There are so many docker images are present in the docker hub publicly.
+https://hub.docker.com
+
+Some of the docker commands:
+docker pull
+docker run
+docker ps
+docker run --options
+docker stop
+docker start
+docker ports, docker port mapping
+docker logs
+docker exec -it
+
+'docker ps' command:
+ Docker command to list the running containers by us.
+'docker run' command:
+creates a container from a given image and starts the container using a given command
+'docker start/stop' command:
+To restart the container, and to stop the container.
+
+'docker run' command:
+creates a container from a given image and starts the container using a given command.
+'docker run -d' command:
+To run the container in detached mode.
+'docker run -p' command:
+To change the port number if the two or more container has the same port number.
+
+If want to change the container name then type:
+docker run -d -p60001:6379(ports) --name redis(new name) redis:4.0(old name)
