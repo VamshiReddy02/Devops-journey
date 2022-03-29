@@ -43,3 +43,8 @@ To change the port number if the two or more container has the same port number.
 
 If want to change the container name then type:
 docker run -d -p60001:6379(ports) --name redis(new name) redis:4.0(old name)
+
+ Downloading docker in Windows
+If you want to download docker to your system then check out this link:
+https://docs.docker.com/get-docker/
+(for all OS)
